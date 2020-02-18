@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="css/fontawesome/css/fontawesome.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+<nav>        
+<ul class="menu">
+    <li><a href="index.html" title="Inicio">Inicio</a></li>
+    <li><a href="quienes-somos.html" title="Quienes Sómos">Quienes Sómos</a></li>
+    <li><a href="contacto.html" title="Contacto">Contacto</a></li>
+    
+
+</ul>
+</nav>
+</header>
+
+    <section id="contacto" class="contacto main">
+    <h1>Escribinos, te respondemos a la brevedad</h1>
+    <form action="" method="POST">
+
+        <div>
+            <label for="txtNombre">Nombre: <span>*</span></label>
+            <!-- Dibuja una caja de texto -->
+            <input type="text" name="txtNombre" id="txtNombre" required>
+        </div>
+        <div>
+            <label for="">Correo: <span>*</span></label>
+            <input type="email" name="txtCorreo" id="txtCorreo" required>
+        </div>
+        <div>
+            <label for="txtTelefono">Teléfono: <span>*</span></label>
+            <input type="text" name="txtTelefono" id="txtTelefono" placeholder="Ej. (+54) 11 9999-9999" required>
+        </div>
+        <div>
+            <label for="">País de origen</label>
+            <select name="lstPais" id="lstPais">
+                <optgroup label="Sudamerica"">
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CL">Chile</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="AL">Alemania</option>
+                    <option value="ES">España</option>
+                    <option value="FR">Francia</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="txtFechaNac">Fecha de nacimiento:</label>
+            <input type="date" name="txtFechaNac" id="txtFechaNac">
+        </div>
+        <div>
+            <label for="">Asunto: <span>*</span></label>
+            <select name="lstAsunto" id="lstAsunto" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="ventas">Ventas</option>
+                <option value="soporte">Soporte</option>
+                <option value="webmaster">Webmaster</option>
+            </select>
+        </div>
+        <div>
+            <label for="txtMensaje">Mensaje: <span>*</span></label>
+            <textarea name="txtMensaje" id="txtMensaje" cols="150" rows="15" required></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="chkNewsletter" id="chkNewsletter">
+            <label for="chkNewsletter">Deseo recibir novedades por correo</label>
+        </div>
+        <div>
+            <input type="checkbox" name="chkPoliticas" id="chkPoliticas">
+            <label for="chkPoliticas">Acepto las políticas de privacidad y condiciones de uso</label>
+        </div>
+        <div>
+            <label for="">¿Es mayor de edad?</label>
+            Sí <input type="radio" name="optMayor" id="optMayorSi">
+            No <input type="radio" name="optMayor" id="optMayorNo">
+        </div>
+        <div>
+            <input type="submit" value="Enviar" class="boton">
+        </div>
+    </form>
+    </section>
+    <footer>
+    <ul class="redes">
+        <li><a href="https://api.whatsapp.com/send?phone=541162423341&text=Hola" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/nelson-daniel-tarche/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/ntarche/fullstack" target="_blank"><i class="fab fa-github"></i></a></li>
+    </ul>    
+    </footer> 
+</body>
+</html>
